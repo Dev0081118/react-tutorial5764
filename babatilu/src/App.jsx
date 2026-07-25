@@ -1,17 +1,19 @@
 import React from 'react'
-
+import Card from './components/Card.jsx'
+import Navbar from './components/Navbar.jsx'
+import './App.css'
 const App = () => {
   return (
-    <>
-    <div id="parent">
-      <h1 id="child1">Hello, World!</h1>
-      <h2 id="child2">Welcome to my React App</h2>
+   <div>
+     <Navbar />
+     <div className="card-container">
+       
+       <Card user='John Doe' paragraph="hi i am John Doe i love dogs" />
+       <Card user='Jane Smith' paragraph="hi i am Jane Smith i love cats" />
+       <Card user='Bob Johnson' paragraph="hi i am Bob Johnson i love birds" />
     </div>
-    <div id="parent2">
-      <h1 id="child3">This is another parent div</h1>
-      <h2 id="child4">With its own children</h2>
-    </div>
-    </>
+     </div> 
+    
     
   )
 }
