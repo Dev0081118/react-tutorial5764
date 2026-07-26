@@ -19,16 +19,24 @@ const cards = [
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG6NvaqyLJ_5auvsCBpppj3frfwwndjrJ3ew&s",
     text: "Customers from near-prime and sub-prime segments with no access to bank credit",
     buttonLable: "Underbanked",
+   }, {
+    id: 4,
+    img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&auto=format&fit=crop&q=80",
+    text: "Young professionals looking for personalized banking products and digital financial services.",
+    buttonLable: "Potential",
   },
+  
 ];
 
 const RightContent = () => {
   return (
-    <div className="h-full w-3/4 flex gap-6">
-      {cards.map((card) => (
-        <ImageContainer key={card.id} {...card} />
-      ))}
-    </div>
+   <div className="w-3/4 no-scrollbar overflow-x-auto overflow-y-hidden">
+  <div className="flex gap-6 w-max h-full">
+    {cards.map((card) => (
+      <ImageContainer key={card.id} {...card} />
+    ))}
+  </div>
+</div>
   );
 };
 
