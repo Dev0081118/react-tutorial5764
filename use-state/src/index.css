@@ -1,0 +1,25 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+}
+input{
+    font-size: larger;
+    border: 2px solid black;
+    padding: 10px;
+    height: 40px;
+    width: 250px;
+    margin: 30px 20px 30px 30px;
+    color: aliceblue;
+    background-color: #222;
+}
+button{
+    color: aliceblue;
+    background-color: #222;
+    height: 50px;
+    width: 100px;
+    padding: 3px;
+    font-size: larger;
+    border: 2px solid black;
+    margin: 30px 20px 30px 30px;
+}
