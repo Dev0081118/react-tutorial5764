@@ -1,12 +1,24 @@
-import React from 'react'
+import React, { useState } from "react";
+import Form from "./components/form";
+import Note from "./components/note";
 
 const App = () => {
+
+  const [notes, setNotes] = useState([]);
+
+  const addNote = (newNote) => {
+    setNotes((prev) => [...prev, newNote]);
+  };
+
   return (
-    <div className='h-screen w-screen px-15 py-9 text-6xl text-white bg-[#222]'>
-      <form action=""></form>
+    <div className="min-h-screen bg-black text-white p-10">
+
+      <Form addNote={addNote} />
+
+      <Note notes={notes} />
 
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
