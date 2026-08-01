@@ -26,7 +26,7 @@ const App = () => {
   }
   return (
     
-    <div className='h-screen overflow-auto p-4 text-white p-10  bg-[#000000]'>
+    <div className='h-screen overflow-auto text-white p-10  bg-[#000000]'>
       <div className='flex flex-wrap h-[80%] gap-5'>{printUserData}</div>
 
       <Buttons index={index}  setIndex={setIndex} setUserData={setUserData} />
