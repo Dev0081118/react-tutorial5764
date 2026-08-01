@@ -32,7 +32,7 @@ const Note = ({ notes }) => {
               {item.note}
             </h1>
 
-            <p className="mt-4 text-xl leading-7 text-gray-700 whitespace-pre-wrap break-words">
+            <p className="mt-4 text-2xl leading-7 text-gray-700 whitespace-pre-wrap break-words">
               {item.description}
             </p>
           </div>
